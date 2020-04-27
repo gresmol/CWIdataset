@@ -1,4 +1,4 @@
-# Swedish Complex Word Identification Dataset
+# Complex Word Identification Dataset for Swedish
 
 A dataset of 4,238 Swedish words (lemmas) with four annotated lexical complexity levels.
 The dataset was developed for Complex Word Identification (CWI) and Automatic Text Simplification (ATS) tasks.
