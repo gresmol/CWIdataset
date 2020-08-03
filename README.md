@@ -6,12 +6,12 @@ The dataset was developed for Complex Word Identification (CWI) and Automatic Te
 ## Complexity Levels
 
 ### Simple words:
-- Level 1: corresponds to language proficiency of a basic user
-- Level 2: corresponds to language proficiency of an independent user
+- Level 1: corresponds to language proficiency of a basic user or CEFR levels A1, A2
+- Level 2: corresponds to language proficiency of an independent user or CEFR levels B1, B2
 
 ### Complex words:
-- Level 3: corresponds to language proficiency of a proficient user
-- Level 4: corresponds to language proficiency of a native speaker
+- Level 3: corresponds to standard Swedish (CEFR C1, C2)
+- Level 4: corresponds to complex Swedish (words that are considered to be complex for native speakers as well)
 
 ## Format
 Each line contains one lemma and its complexity level separated by a tab:
@@ -21,6 +21,18 @@ omfattning	3
 oklar	2
 ...
 ```
+
+## Evaluation
+The dataset was evaluated by one native speaker and one intermediate learner of Swedish.
+
+The dataset was evaluated in terms of fuzzy match (allows a missmatch of one difficulty level) and exact match (the levels are the same).
+
+The results show both high annotation accuracy and high inter-annotator agreement.
+
+Match | Learner | Native Speaker
+------------ | ------------ | -------------
+Fuzzy | 0.745 | 0.99
+Exact | 0.755 | 0.985
 
 ## Sources
 Swedish CWI dataset was compiled from various sources of simple, standard and complex Swedish. 
